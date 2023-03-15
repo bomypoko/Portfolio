@@ -8,15 +8,17 @@ const App = () => {
   
   <BrowserRouter>
 
-      <div className="relative z-0 bg-primary">
-        {/* Start Navbar, Hero Section */}
-        <div className="bg-hero-pattern bg-cover bg-center bg-no-repeat">
+        {/* Main Container  */}
+      <div className="relative z-0 bg-primary ">
+
+        {/* Section 1 - Start Navbar, Hero Section */}
+        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
           <Navbar/>
           <Hero/>
         </div>
-        {/* End Navbar, Hero Section */}
+        {/* Section 1 - End Navbar, Hero Section */}
 
-        {/* Start Other Section */}
+        {/* Section 2 - Start Other Section */}
         <div>
           <About/>
           <Experience/>
@@ -28,7 +30,9 @@ const App = () => {
             <StarsCanvas/>
           </div>
         </div>
+        {/* Section 2 - End Other Section  */}
       </div>
+      {/* Main Container - End  */}
     </BrowserRouter>
   )
 }
