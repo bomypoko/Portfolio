@@ -10,6 +10,7 @@ const Navbar = () => {
   const [ toggle , setToggle ] = useState(false)
 
 
+
   return (
 
     // Semantic Tag ( Nav )
@@ -43,14 +44,12 @@ const Navbar = () => {
           </ul>
           {/* Mobile Nav Bar */}
 
-          <div className='bom1 sm:hidden flex flex-1 justify-end items-center'>
-                <img 
-                src={toggle ? close : menu} 
-                alt="menu" 
-                className='w-[28px] h-[28px] object-contain cursor-pointer'
-                onClick={() => setToggle(prev => !toggle)}
-                />
-
+          <div className=' sm:hidden flex flex-1 justify-end items-center'>
+               <img 
+               src={ toggle ?  close: menu} 
+               alt="menu" 
+               className='w-[28px] h-28px cursor-pointer object-contain'
+               onClick={() => setToggle((prev) => !prev)} />
                 
           </div>
 
