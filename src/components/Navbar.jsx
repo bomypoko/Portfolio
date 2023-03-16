@@ -42,15 +42,34 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          {/* Mobile Nav Bar */}
 
+          {/* Start - Mobile Icon Toggle Menu */}
           <div className=' sm:hidden flex flex-1 justify-end items-center'>
                <img 
                src={ toggle ?  close: menu} 
                alt="menu" 
                className='w-[28px] h-28px cursor-pointer object-contain'
                onClick={() => setToggle((prev) => !prev)} />
-                
+          </div>
+          {/* End Mobile icon Toggle  */}
+
+
+          {/* Active popup menu bar when click */}
+          <div className={`${!toggle ? 'hidden' : 'flex'} p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl ` }>
+               <ul className='list-none flex flex-col justify-end items-start gap-4'>
+                {navLinks.map((item) => (
+                  <li 
+                  key={item.id}
+                  className={`${active === item.title
+                  ? "text-white"
+                  : "text-secondary"
+                  } font-poppins font-medium cursor-pointer text-[16px]`
+                 } onClick={() => setActive(item.title)}>
+
+                    <a href={`#${item.id}`}>{item.title}</a>
+                  </li>
+                ))}
+               </ul>
           </div>
 
 
