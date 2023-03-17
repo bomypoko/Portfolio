@@ -8,23 +8,29 @@ const Navbar = () => {
 
   const [ active , setActive ] = useState('')
   const [ toggle , setToggle ] = useState(false)
+  
 
 
 
   return (
 
     // Semantic Tag ( Nav )
-    <nav className={`${styles.paddingX} w-full flex items-center py-5 top-0 z-20 ` }>
+    <nav className={`${styles.paddingX} w-full flex items-center py-5 top-0 z-20  bg-black` }>
       
       {/* Container - Start - ( Logo and Link ) */}
-      <div className='w-full flex justify-between items-center max-w-7xl mx-auto '>
 
-          <Link to='/' className='flex items-center gap-2' 
+      <div className='bom2 w-full flex justify-between items-center max-w-7xl mx-auto '>
+          <Link 
+          to='/' 
+          className='flex items-center gap-2' 
           onClick={() => {setActive('')
           window.scrollTo(0,0)}}>
-
-          <img src={bomlogo} alt="logo" className='w-9 h-9 object-contain' />
-          <p className='text-white text-[18px] font-bolt cursor-pointer' >Ratchari Kidking <span className='sm:block hidden'>| Web Developer </span></p>
+          
+          <img 
+          src={bomlogo} 
+          alt="logo" 
+          className='w-9 h-9 object-contain' />
+          <p className='text-white text-[18px] font-bolt cursor-pointer flex' >Ratchari Kidking <span className=' sm:block hidden ml-2'> | Web Developer </span></p>
           </Link>
 
 
