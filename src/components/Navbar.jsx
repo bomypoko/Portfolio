@@ -41,7 +41,7 @@ const Navbar = () => {
               className={`${active === link.title
                 ? "text-white"
                 : "text-secondary"
-                } hover:text-white text-[18px] font-medium cursor-pointer`}
+                } hover:text-white text-[18px] font-medium cursor-pointer `}
               onClick={() => setActive(link.title)}  >
                 
                 <a href={`#${link.id}`}>{link.title}</a>
@@ -54,7 +54,7 @@ const Navbar = () => {
                <img 
                src={ toggle ?  close: menu} 
                alt="menu" 
-               className='w-[28px] h-28px cursor-pointer object-contain'
+               className='w-[28px] h-28px cursor-pointer  object-contain'
                onClick={() => setToggle((prev) => !prev)} />
           </div>
           {/* End Mobile icon Toggle  */}
@@ -67,9 +67,9 @@ const Navbar = () => {
                   <li key={item.id}
 
                   className={`${active === item.title
-                  ? "text-white"
+                  ? "text-white" 
                   : "text-secondary"
-                  } font-poppins font-medium cursor-pointer text-[16px]`
+                  } font-poppins  font-medium cursor-pointer text-[16px]`
                  } 
                   onClick={() => {
                     setToggle(!toggle)
