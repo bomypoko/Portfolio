@@ -14,7 +14,13 @@ const Hero = () => {
             <div className='w-5 h-5 rounded-full bg-[#915eff]'/>
             <div className='w-1 sm:h-80 h-40 violet-gradient'/>
           </div>
+          <div>
+            <h1 className={`${styles.heroHeadText}`}>Hi , i am <span className='text-[#915eff]'>Ratchasri Kidking</span></h1>
+            <p className={`${styles.heroSubText} text-white-100`}>Front-End Developer and HR</p>
+          </div>
+
       </div>
+          <ComputersCanvas/>
     </section>
   )
 }
