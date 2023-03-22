@@ -13,7 +13,7 @@ function HOC() {
             initial="hidden"
             whileInView="show"
             viewport={{once: true, amount: 0.25 }}
-            className={`${styles.padding} max-w-7xl bom1 mx-auto relative z-0`}>
+            className={`${styles.padding} max-w-7xl mx-auto relative z-0`}>
 
                 {/* Click แล้วลงมาหา about section ตรง tag span แต่จะมองไม่เห็น */}
                 <span className='hash-span ' id={idName}>
