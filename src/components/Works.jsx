@@ -1,9 +1,53 @@
 import React from 'react'
+import { Tilt } from 'react-tilt'
+import { motion } from 'framer-motion'
+import { styles } from '../style'
+import { github } from '../assets'
+import { SectionWrapper } from '../hoc'
+import { projects } from '../constants'
+import { fadeIn,textVariant } from '../util/motion'
 
-const Works = () => {
+
+const ProjectCard = ( { index , name , description ,tags ,image , source_code_link }) => {
   return (
-    <div>Works</div>
+    <>
+    </>
   )
 }
 
-export default Works
+const Works = () => {
+  return (
+    <>
+      <motion.div
+        variants={textVariant()}>
+          <p className={styles.sectionSubText}>
+            My Work
+          </p>
+          <h2 className={styles.sectionHeadText}>
+            Project.
+          </h2>
+      </motion.div>
+
+      <div className='w-full flex'>
+        <motion.p
+        variants={fadeIn("","",0.1 , 1)}
+        className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel excepturi pariatur nemo cumque voluptatibus aliquam explicabo voluptas, magnam eos quos autem, provident non assumenda optio veritatis repudiandae hic officia vero.
+        </motion.p>
+      </div>
+
+      <div className='mt-20 flex flex-wrap gap-7'>
+        {projects.map((project , index ) => (
+          <ProjectCard
+          key={`project-${index}`}
+          {...project}
+          index={index}/>
+        ))}
+
+      </div>
+
+    </>
+  )
+}
+
+export default SectionWrapper(Works , "")

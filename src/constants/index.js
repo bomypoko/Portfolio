@@ -42,11 +42,11 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "FrontEnd Developer",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Responsive Design",
     icon: mobile,
   },
   {
@@ -54,7 +54,7 @@ const services = [
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Recruiter",
     icon: creator,
   },
 ]
@@ -72,18 +72,12 @@ const technologies = [
     name: "JavaScript",
     icon: javascript,
   },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
+
   {
     name: "React JS",
     icon: reactjs,
   },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
+  
   {
     name: "Tailwind CSS",
     icon: tailwind,
@@ -108,45 +102,42 @@ const technologies = [
     name: "figma",
     icon: figma,
   },
-  {
-    name: "docker",
-    icon: docker,
-  },
+ 
 ]
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
+    title: " Senior HR and Administrative Officer",
+    company_name: "Brighton College International School",
     icon: starbucks,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "July 2016 - June 2020",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Responsible for updating and preparing the monthly payroll of all staff in the schools and companies of the St. Andrews Schools group working closely with Central Finance Teamand HRBP for Thailand and submitting payroll reports to Management..",
+      "Provide detail of income tax and monthly withholding tax calculation to existing expat staff before January payroll is paid, and to new hires who join during calendar year before their 1st salary is paid.",
+      "Prepare, calculate and submit monthly Withholding Tax form (P.N.D.1) of all 4 schools in the St. Andrews International Schools group to Revenue Department.",
+      "Visa and Work-Permit.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
+    title: "Senior HR and Administrative Officer",
+    company_name: "Verso Internation School",
     icon: tesla,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "July 2020 - June 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Support in HR process improvement (minimize duplicate work within HR team or across department).",
+      "Local medical Insurance review: Contact Local Insurance company and do the comparison of Local Insurance policy as well as provide recommendation.",
+      "Yearly prepare annual workmen compensations fund and other inspection report and submit to Social Security office for all schools in the group.",
+      
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
+    title: "HR Executive and Operation",
+    company_name: "Jitta Wealth",
     icon: shopify,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "July 2021 - Current",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
