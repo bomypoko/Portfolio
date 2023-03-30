@@ -4,7 +4,7 @@ import emailjs from '@emailjs/browser'
 import { styles } from '../style'
 import { EarthCanvas } from './canvas'
 import { SectionWrapper } from '../hoc'
-import { slideIn } from '../util/motion'
+import { fadeIn, slideIn } from '../util/motion'
 
 const Contact = () => {
 
@@ -31,7 +31,7 @@ const Contact = () => {
       {/* FadeIn from left  */}
       <motion.div 
       variants={slideIn('left',"tween",0.2,1)} 
-      className="bom1 flex-[0.75] bg-black-100 rounded-2xl p-8">
+      className=" flex-[0.75] bg-black-100 rounded-2xl p-8">
         <p className={styles.sectionSubText}>Get In Touch</p>
         <h3 className={styles.heroHeadText}>Contact</h3>
       {/* Form Start  */}
@@ -63,17 +63,28 @@ const Contact = () => {
           </label>
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your Message</span>
-             <textarea name="" id="" cols="30" rows="10"></textarea>
-            <input 
-              type="text" 
-              name="name" 
-              value={form.name} 
+      
+            <textarea 
+              rows="7"
+              name="message" 
+              value={form.message} 
               onChange={handleChange}
-              placeholder="What Your Name?"
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium'/>
+              placeholder="What do you want to say?"
+              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium'
+              />
           </label>
+
+          <button
+          type='submit'
+          className='bg-tertiary w-fit rounded-xl py-3 px-8 outline-none text-white font-bold shadow-md shadow-primary'> {loading ? "Loading" : "Send"} </button>
           
       </form>
+      </motion.div>
+
+      <motion.div variants={slideIn('right','tween',0.2,1)}
+       className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
+      >
+        <EarthCanvas/>
 
       </motion.div>
     </div>
