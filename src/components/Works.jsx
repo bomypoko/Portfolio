@@ -18,7 +18,7 @@ const ProjectCard = ({ index , name , description ,tags ,image , source_code_lin
         <img
           src={image}
           alt='project_image'
-          className='w-full h-full object-cover
+          className='w-full h-full object-auto
            rounded-2xl'
         />
         
