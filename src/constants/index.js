@@ -4,30 +4,24 @@ import {
   creator,
   web,
   javascript,
-  typescript,
   html,
   css,
   reactjs,
-  redux,
   tailwind,
   nodejs,
   mongodb,
   git,
   figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
   carrent,
   jobit,
   tripguide,
   threejs,
   jitta,
-  brighton,
   verso,
   bomlogo,
   brightoncollege,
+  futurebank,
+  
 } from "../assets"
 
 export const navLinks = [
@@ -126,7 +120,7 @@ const experiences = [
   },
   {
     title: "Senior HR and Administrative Officer",
-    company_name: "Verso Internation School",
+    company_name: "Verso International School",
     icon: verso,
     iconBg: "#E6DEDD",
     date: "July 2020 - June 2021",
@@ -194,30 +188,27 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Future Bank",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Jumping to start building a web project by focusing on Responsive Design, Folder structure, and Reusing Components.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "tailwind",
         color: "green-text-gradient",
       },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
+    
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: futurebank,
+    source_code_link: "https://github.com/bomypoko/LandingPage_Web3theme-Hoobank",
   },
   {
     name: "Job IT",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "",
     tags: [
       {
         name: "react",
