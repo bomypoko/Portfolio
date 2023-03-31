@@ -21,6 +21,7 @@ import {
   bomlogo,
   brightoncollege,
   futurebank,
+  metaverse
   
 } from "../assets"
 
@@ -206,25 +207,25 @@ const projects = [
     source_code_link: "https://github.com/bomypoko/LandingPage_Web3theme-Hoobank",
   },
   {
-    name: "Job IT",
+    name: "Metaverse ",
     description:
-      "",
+      "To challenge myself, I start building a website to look more alive by using framework such as Framer-Motion. of course, still stick on Folder Structure and Reusing Components for the best practice.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "tailwind",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "Framer Motion",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: metaverse,
+    source_code_link: "https://github.com/bomypoko/LandingPage_Web3theme-Metaverseworld",
   },
   {
     name: "Trip Guide",

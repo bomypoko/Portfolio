@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
 
     // Semantic Tag ( Nav )
-    <nav className={`${styles.paddingX} w-full flex items-center py-5 top-0 z-20  bg-black` }>
+    <nav className={`${styles.paddingX} w-full flex items-center py-5 top-0 z-20 fixed bg-black` }>
       
       {/* Container - Start - ( Logo and Link ) */}
 

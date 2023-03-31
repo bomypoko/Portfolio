@@ -24,6 +24,7 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import futurebank from './futurebank.png'
+import metaverse from './metaverse.png'
 
 
 import verso from './verso.png'
@@ -58,4 +59,5 @@ export {
   verso,
   brightoncollege,
   futurebank,
+  metaverse
 };
