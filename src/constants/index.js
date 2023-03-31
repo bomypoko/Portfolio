@@ -23,6 +23,11 @@ import {
   jobit,
   tripguide,
   threejs,
+  jitta,
+  brighton,
+  verso,
+  bomlogo,
+  brightoncollege,
 } from "../assets"
 
 export const navLinks = [
@@ -109,7 +114,7 @@ const experiences = [
   {
     title: " Senior HR and Administrative Officer",
     company_name: "Brighton College International School",
-    icon: starbucks,
+    icon: brightoncollege,
     iconBg: "#383E56",
     date: "July 2016 - June 2020",
     points: [
@@ -122,7 +127,7 @@ const experiences = [
   {
     title: "Senior HR and Administrative Officer",
     company_name: "Verso Internation School",
-    icon: tesla,
+    icon: verso,
     iconBg: "#E6DEDD",
     date: "July 2020 - June 2021",
     points: [
@@ -135,7 +140,7 @@ const experiences = [
   {
     title: "HR Executive and Operation",
     company_name: "Jitta Wealth",
-    icon: shopify,
+    icon: jitta,
     iconBg: "#383E56",
     date: "July 2021 - Current",
     points: [
@@ -146,16 +151,16 @@ const experiences = [
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
+    title: "Start Learning to how become a Programer",
+    company_name: "Self learning ",
+    icon: bomlogo,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "Mar 2022 - Present",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Learning back-end technologies such as NodeJs.",
+      "Focus on Responsive Website to fit with all the devices.",
+     
     ],
   },
 ]

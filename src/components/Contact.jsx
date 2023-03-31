@@ -6,6 +6,10 @@ import { EarthCanvas } from './canvas'
 import { SectionWrapper } from '../hoc'
 import { fadeIn, slideIn } from '../util/motion'
 
+
+// template_j7gilhr
+// service_8o24ih9
+// rSU7UDGOoAB0iGYa5
 const Contact = () => {
 
   const formRef = useRef()
@@ -20,10 +24,39 @@ const Contact = () => {
 
 
  const handleChange = (e) => {
-
+  const { name , value } = e.target
+  setForm( {...form, [name]: value})
  }
  const handleSubmit = (e) => {
+  e.preventDefault();
+  setLoading(true)
 
+  emailjs.send(
+    'service_8o24ih9',
+    'template_j7gilhr',
+    {
+      from_name: form.name,
+      to_name: 'Ratchasri Kidking',
+      from_email: form.email,
+      to_email:'orchero.x@gmail.com',
+      message: form.message,
+    },
+    'rSU7UDGOoAB0iGYa5'
+    )
+    .then(() => {
+      setLoading(false)
+      alert('Thank you. I will get back to you asap!')
+
+      setForm ({
+        name: '',
+        email: '',
+        message: '',
+      });
+    }, (error) => {
+      setLoading(false)
+      console.log(error);
+      alert('Something went wrong')
+    })
  }
 
   return (
@@ -76,7 +109,7 @@ const Contact = () => {
 
           <button
           type='submit'
-          className='bg-tertiary w-fit rounded-xl py-3 px-8 outline-none text-white font-bold shadow-md shadow-primary'> {loading ? "Loading" : "Send"} </button>
+          className='bg-tertiary w-fit rounded-xl py-3 px-8 outline-none text-white font-bold shadow-md shadow-primary hover:bg-green-600'> {loading ? "Loading" : "Send"} </button>
           
       </form>
       </motion.div>
