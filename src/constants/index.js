@@ -191,7 +191,7 @@ const projects = [
   {
     name: "Future Bank",
     description:
-      "Jumping to start building a web project by focusing on Responsive Design, Folder structure, and Reusing Components.",
+      "Jumping to start building a web project by focusing on Responsive Design, Folder structure, and be able to create and reuseable components and deploy on free web hosting 'Nelify'.",
     tags: [
       {
         name: "react",
@@ -227,27 +227,7 @@ const projects = [
     image: metaverse,
     source_code_link: "https://github.com/bomypoko/LandingPage_Web3theme-Metaverseworld",
   },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
-  },
+
 ]
 
 export { services, technologies, experiences, testimonials, projects }
