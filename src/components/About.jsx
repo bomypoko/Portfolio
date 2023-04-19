@@ -62,7 +62,7 @@ const About = () => {
   );
 };
     // About (Component , ID )
-// export default SectionWrapper(About , "about") ;
+// export default SectionWrapper(About , "about" ) ;
 // export default About
 
 export default SectionWrapper(About , "about")
