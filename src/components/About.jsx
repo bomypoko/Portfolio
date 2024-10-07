@@ -48,9 +48,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-         I'am a self-tought and start my journey for coding just the begining
-            of this year. Now I'm focusing on building responsive front-end web
-            application while also learning back-end technologies.
+         As an HR professional, I specialize in visa and work permit processing, ensuring compliance and support for international employees. I manage payroll functions to guarantee timely and accurate compensation, while also overseeing staff benefits to enhance employee satisfaction and retention. Additionally, I am responsible for recruitment, identifying and attracting top talent to drive organizational success. My goal is to create a positive work environment that fosters growth and collaboration.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
